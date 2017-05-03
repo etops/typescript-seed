@@ -1,0 +1,55 @@
+{
+  "name": "typescript-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "mocha --compilers ts:ts-node/register src/**/*.spec.ts",
+    "test:coverage": "NODE_ENV=test nyc npm t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ckaeslin@github.com/etops/typescript-seed.git"
+  },
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "src/*.spec.ts",
+      "src/**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html",
+      "lcov",
+      "text-summary"
+    ],
+    "all": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etops/typescript-seed/issues"
+  },
+  "homepage": "https://github.com/etops/typescript-seed#readme",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.15",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "nyc": "^10.3.0",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.3.2"
+  }
+}
