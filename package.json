@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "test": "mocha --compilers ts:ts-node/register src/**/*.spec.ts",
-    "test:coverage": "NODE_ENV=test nyc npm t"
+    "test:coverage": "NODE_ENV=test nyc npm t",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,7 @@
     "mocha": "^3.3.0",
     "nyc": "^10.3.0",
     "ts-node": "^3.0.2",
+    "tslint": "^5.1.0",
     "typescript": "^2.3.2"
   }
 }
