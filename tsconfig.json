@@ -2,9 +2,26 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
+        "declaration": false,
+        "removeComments": false,
         "noImplicitAny": false,
         "sourceMap": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "pretty": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "allowJs": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noImplicitReturns": true,
+        "noImplicitUseStrict": false,
+        "noFallthroughCasesInSwitch": true,
+        "typeRoots": [
+          "./node_modules/@types",
+          "./node_modules"
+        ],
+        "types": [
+          "node"
+        ]
     },
     "include": [
         "src/**/*"
