@@ -48,6 +48,7 @@
     "@types/node": "^7.0.15",
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
     "nyc": "^10.3.0",
     "ts-node": "^3.0.2",
     "typescript": "^2.3.2"
