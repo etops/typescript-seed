@@ -35,5 +35,5 @@ npm test
 or with coverage
 
 ```
-npm test:coverage
+npm run test:coverage
 ```
