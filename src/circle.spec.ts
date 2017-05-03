@@ -6,6 +6,6 @@ describe('index function', () => {
   it('should return peripheral', () => {
     const circle = new Circle(2);
     const result = circle.getPeripheral();
-    expect(result).to.equal(2*Math.PI*2);
+    expect(result).to.equal(2 * Math.PI * 2);
   });
 });
